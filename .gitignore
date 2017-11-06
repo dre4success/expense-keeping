@@ -2,3 +2,4 @@ node_modules
 public/bundle.js
 yarn.lock
 src/hoc.js
+src/tests/add.test.js
