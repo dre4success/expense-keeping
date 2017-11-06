@@ -65,7 +65,7 @@ export class ExpenseForm extends Component {
           <input 
             type="text"
             placeholder="Amount"
-            value={tihs.state.amount}
+            value={this.state.amount}
             onChange={this.onAmountChange}
           />
           <SingleDatePicker 

@@ -11,15 +11,15 @@ const AppRouter = () => (
   <BrowserRouter>
     <div>
       <Header />
+      <Switch>
+        <Route exact path="/" component={Dashboard} />
+        <Route exact path="/create" component={AddExpense} />
+        <Route exact path="/edit/:id" component={EditExpense} />
+        <Route exact path="/help" component={HelpPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
     </div>
-    <Switch>
-      <Route exact path="/" component={Dashboard} />
-      <Route exact path="/create" component={AddExpense} />
-      <Route exact path="/edit/:id" component={EditExpense} />
-      <Route exact path="/help" component={HelpPage} />
-      <Route component={NotFoundPage} />
-    </Switch>
   </BrowserRouter>
-)
+);
 
 export default AppRouter;
