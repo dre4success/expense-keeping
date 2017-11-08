@@ -4,16 +4,16 @@ exports[`should render ExpenseListItem correctly 1`] = `
 <div>
   <Link
     replace={false}
-    to="/edit/2"
+    to="/edit/3"
   >
     <h3>
-      Rent
+      Credit Card
     </h3>
   </Link>
   <p>
-    195999
-     - 
-    -345600000
+    ₦45.00
+    -
+    5th January, 1970
   </p>
 </div>
 `;
