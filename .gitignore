@@ -1,8 +1,5 @@
 node_modules
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
+public/dist/
 yarn.lock
 src/hoc.js
 src/tests/add.test.js
