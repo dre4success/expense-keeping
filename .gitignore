@@ -3,3 +3,6 @@ public/dist/
 yarn.lock
 src/hoc.js
 src/tests/add.test.js
+.env.test
+.env.development
+yarn-error.log
