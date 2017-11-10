@@ -1,0 +1,23 @@
+.button {
+  background: $firebrick;
+  color: white;
+  border: none;
+  padding: $s-size;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 300;
+  font-size: $font-size-large;
+}
+.button__header {
+  @extend .button;
+  background: #218c9c;
+}
+
+.button-link {
+  background: none;
+}
+
+.button--secondary {
+  background: #888888;
+}

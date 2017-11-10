@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 import { startEditExpense, startRemoveExpense } from '../actions/expenses';
 
-
 export class EditExpense extends Component {
   onSubmit = expense => {
     this.props.startEditExpense(this.props.expense.id, expense);
@@ -16,8 +15,15 @@ export class EditExpense extends Component {
   render() {
     return (
       <div>
-        <ExpenseForm expense={this.props.expense} onSubmit={this.onSubmit} />
-        <button onClick={this.onRemove}>Remove</button>
+        <div className="page-header">
+          <div className="content-container">
+            <h1 className="page-header__title">Edit Expense</h1>
+          </div>
+        </div>
+        <div className="content-container">
+          <ExpenseForm expense={this.props.expense} onSubmit={this.onSubmit} />
+        <button className="button button--secondary" onClick={this.onRemove}>Remove Expense</button>
+        </div>
       </div>
     );
   }
@@ -36,4 +42,7 @@ const mapStateToProps = (state, props) => {
   };
 };
 
-export default connect(mapStateToProps, {startEditExpense, startRemoveExpense})(EditExpense);
+export default connect(mapStateToProps, {
+  startEditExpense,
+  startRemoveExpense
+})(EditExpense);
