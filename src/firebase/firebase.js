@@ -13,4 +13,7 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-export { firebase, database as default };
+// Auth provider to allow setup authentication in firebase with google
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+
+export { firebase, googleAuthProvider, database as default };
