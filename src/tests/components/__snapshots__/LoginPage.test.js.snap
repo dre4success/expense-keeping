@@ -20,6 +20,14 @@ exports[`should render LoginPage correctly 1`] = `
     >
       Login With Google
     </button>
+    <p>
+      OR
+    </p>
+    <button
+      className="button__facebook"
+    >
+      Login With Facebook
+    </button>
   </div>
 </div>
 `;

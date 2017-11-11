@@ -19,6 +19,9 @@ exports[`should render Header correctly 1`] = `
           Expenses
         </h1>
       </Link>
+      <h3
+        className="header__title"
+      />
       <button
         className="button button-link"
         onClick={[Function]}

@@ -1,3 +1,4 @@
+
 .header {
   background: $dark-grey;
 }
@@ -6,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: $s-size 0;
+  font-family: 'Dancing Script' cursive;
 }
 
 .header__title {
@@ -13,5 +15,10 @@
   text-decoration: none;
   h1 {
     margin: 0;
+    font-family: 'Dancing Script', cursive;
   }
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
 }

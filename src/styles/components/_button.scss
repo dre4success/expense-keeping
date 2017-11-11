@@ -14,8 +14,14 @@
   background: #218c9c;
 }
 
+.button__facebook {
+  @extend .button;
+  background: #3B5998;
+}
+
 .button-link {
   background: none;
+  font-family: 'Dancing Script', cursive;
 }
 
 .button--secondary {
