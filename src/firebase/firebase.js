@@ -16,5 +16,12 @@ const database = firebase.database();
 // Auth provider to allow setup authentication in firebase with google
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 const facebookProvider = new firebase.auth.FacebookAuthProvider();
+const twitterProvider = new firebase.auth.TwitterAuthProvider();
 
-export { firebase, googleAuthProvider, facebookProvider, database as default };
+export {
+  firebase,
+  googleAuthProvider,
+  facebookProvider,
+  twitterProvider,
+  database as default
+};

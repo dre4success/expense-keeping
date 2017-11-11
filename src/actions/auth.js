@@ -1,7 +1,8 @@
 import {
   firebase,
   googleAuthProvider,
-  facebookProvider
+  facebookProvider,
+  twitterProvider
 } from '../firebase/firebase';
 
 export const login = (uid, user) => ({
@@ -17,6 +18,10 @@ export const startLogin = () => dispatch => {
 export const loginWithFacebook = () => dispatch => {
   return firebase.auth().signInWithPopup(facebookProvider);
 };
+
+export const loginWithTwitter = () => dispatch => {
+  return firebase.auth().signInWithPopup(twitterProvider);
+}
 
 export const logout = () => ({
   type: 'LOGOUT'

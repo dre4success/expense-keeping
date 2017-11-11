@@ -19,6 +19,11 @@
   background: #3B5998;
 }
 
+.button__twitter {
+  @extend .button;
+  background: #0084b4;
+}
+
 .button-link {
   background: none;
   font-family: 'Dancing Script', cursive;
