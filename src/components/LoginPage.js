@@ -18,10 +18,10 @@ export const LoginPage = ({
       <button className="button" onClick={startLogin}>
         Login With Google
       </button>
-      <p>OR</p>
+{/*       <p>OR</p>
       <button className="button__facebook" onClick={loginWithFacebook}>
         Login With Facebook
-      </button>
+      </button> */}
       <p>OR</p>
       <button className="button__twitter" onClick={loginWithTwitter}>
         Login With Twitter

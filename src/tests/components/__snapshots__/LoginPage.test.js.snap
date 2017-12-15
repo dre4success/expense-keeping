@@ -24,14 +24,6 @@ exports[`should render LoginPage correctly 1`] = `
       OR
     </p>
     <button
-      className="button__facebook"
-    >
-      Login With Facebook
-    </button>
-    <p>
-      OR
-    </p>
-    <button
       className="button__twitter"
     >
       Login With Twitter

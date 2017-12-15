@@ -18,7 +18,7 @@ test('should call startLogin on button click', () => {
   expect(startLogin).toHaveBeenCalled();
 });
 
-test('should call loginWithFacebook on button click', () => {
+/* test('should call loginWithFacebook on button click', () => {
   const loginWithFacebook = jest.fn();
   const wrapper = shallow(<LoginPage loginWithFacebook={loginWithFacebook} />);
   wrapper
@@ -26,13 +26,13 @@ test('should call loginWithFacebook on button click', () => {
     .at(1)
     .simulate('click');
   expect(loginWithFacebook).toHaveBeenCalled();
-});
+}); */
 test('should call loginWithTwitter on button click', () => {
   const loginWithTwitter = jest.fn();
   const wrapper = shallow(<LoginPage loginWithTwitter={loginWithTwitter} />);
   wrapper
     .find('button')
-    .at(2)
+    .at(1)
     .simulate('click');
   expect(loginWithTwitter).toHaveBeenCalled();
 });
